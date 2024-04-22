@@ -22,6 +22,16 @@ class ProfileScreen extends StatelessWidget {
                   context.go('/profile/detailProfile/1996', extra: 'Hi bro!!');
                 },
                 child: const Text('Detail ProfileScreen')),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Center(
+            child: ElevatedButton(
+                onPressed: () {
+                  context.go('/profile/fileDownloadScreen');
+                },
+                child: const Text('Download File Screen')),
           )
         ],
       ),

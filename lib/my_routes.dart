@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_shell_demo/bottom_nav.dart';
 import 'package:flutter_shell_demo/detail_homescreen.dart';
 import 'package:flutter_shell_demo/details_profilescreen.dart';
+import 'package:flutter_shell_demo/file_download_demo.dart';
 import 'package:flutter_shell_demo/homescreen.dart';
-// import 'package:flutter_shell_demo/main.dart';
 import 'package:flutter_shell_demo/profile_screen.dart';
 import 'package:flutter_shell_demo/simple_animation.dart';
 import 'package:flutter_shell_demo/splashscreen.dart';
@@ -52,7 +52,10 @@ final GoRouter router = GoRouter(
                         paramData: state.pathParameters['param'],
                         extra: state.extra,
                       ),
-                    )
+                    ),
+                    GoRoute(
+                        path: 'fileDownloadScreen',
+                        builder: (context, state) => const FileDownloadDemo())
                   ])
             ])
           ])
